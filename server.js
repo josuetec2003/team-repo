@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.end('URL requested: ' + req.url)
 })
 
+app.get('/login/', (req, res) => {
+    res.render('login.pug')
+})
+
 app.listen(PORT, (err) => {
     if (err)
 	console.log('An error has occurred')
