@@ -7,3 +7,5 @@ gulp.task('sass', () => {
 	.pipe(sass())
 	.pipe(gulp.dest('public/css/')
 })
+
+gulp.task('default', ['sass'])
