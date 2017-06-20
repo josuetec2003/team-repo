@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const PORT = 8888
 
+app.set('view engine', 'gulp')
+app.use(express.static(__dirname + '/public'))
+
 app.get('/', (req, res) => {
     res.end('URL requested: ' + req.url)
 })
