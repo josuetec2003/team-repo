@@ -13,6 +13,10 @@ app.get('/login/', (req, res) => {
     res.render('login.pug')
 })
 
+app.get('/logout/', (req, res) => {
+    res.render('logout.pug')
+})
+
 app.listen(PORT, (err) => {
     if (err)
 	console.log('An error has occurred')
